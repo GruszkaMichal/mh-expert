@@ -19,7 +19,7 @@
         url('../fonts/InterTight-ExtraBold.woff') format('woff'),
         url('../fonts/InterTight-ExtraBold.ttf') format('truetype'),
         url('../fonts/InterTight-ExtraBold.svg#InterTight-ExtraBold') format('svg');
-    font-weight: bold;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }

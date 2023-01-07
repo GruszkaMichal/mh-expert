@@ -3,4 +3,41 @@ html{
 }
 body{
     font-family: 'Inter Tight';
+    --red-color: #D9002B;
+}
+a{
+    transition: color 0.3s ease-in-out;
+}
+body a:hover{
+    color: var(--red-color);
+}
+
+/* link icon */
+.IcLocation, 
+.IcMail, 
+.IcPhone{
+    position: relative;
+}
+.IcLocation::after, 
+.IcMail::after, 
+.IcPhone::after{
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: block;
+    left: -36px;
+    top: -1px;
+}
+.IcMail::after{
+    background-image: url(../img/svg/icon-mail.svg);
+}
+.IcLocation::after{
+    background-image: url(../img/svg/icon-localization.svg);
+}
+.IcPhone::after{
+    background-image: url(../img/svg/icon-phone.svg);
+    left: -26px;
 }
