@@ -1,8 +1,9 @@
 footer { 
     background: radial-gradient(45.71% 100% at 50% 0%, #252525 0%, #000000 100%);
     padding-top: 70px;
+    padding-bottom: 30px;
     color:#FFF;
-    padding-bottom: 150px;
+    border-top: 7px solid #A00020;
 }
 footer a{
     color:#FFF;
@@ -40,6 +41,9 @@ footer .content-wrapper{
     width: max-content;
     margin: auto;
 }
+.content-wrapper p{
+    margin: 0;
+}
 .footers-links a{
     display:block;
     margin-bottom: 20px;
@@ -70,4 +74,17 @@ footer .content-wrapper{
 .font-24{
     font-size: 2.4rem;
     font-weight: 400;
+}
+.footer-logo{
+    display: block;
+    margin: auto;
+    margin-top: 70px;
+}
+.who_am_i{
+    background-color: #fff;
+    padding: 10px 0px;
+    margin-top: 30px;
+    color: #000;
+    text-align: end;
+    font-size: 1.3rem;
 }
