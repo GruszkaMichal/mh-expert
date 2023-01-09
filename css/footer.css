@@ -1,0 +1,73 @@
+footer { 
+    background: radial-gradient(45.71% 100% at 50% 0%, #252525 0%, #000000 100%);
+    padding-top: 70px;
+    color:#FFF;
+    padding-bottom: 150px;
+}
+footer a{
+    color:#FFF;
+    text-decoration:none;
+    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+}
+footer p{
+    font-size: 2rem;
+}
+.footer-coontainer .row{
+    justify-content: center;
+}
+.footer-coontainer{
+    max-width: 950px;
+    margin: auto;
+}
+footer a:hover{
+    color:#D9002B;
+}
+footer span{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+footer strong{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+footer .content-wrapper{
+    width: max-content;
+    margin: auto;
+}
+.footers-links a{
+    display:block;
+    margin-bottom: 20px;
+}
+.border-around{
+    position: relative;
+}
+.border-around::after{
+    display: block;
+    content: "";
+    height: 50%;
+    width: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 25%);
+}
+.border-around::before{
+    display: block;
+    content: "";
+    height: 50%;
+    width: 1px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 25%);
+}
+.font-24{
+    font-size: 2.4rem;
+    font-weight: 400;
+}
