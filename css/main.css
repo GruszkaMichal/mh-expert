@@ -3,3 +3,32 @@
     background-repeat: no-repeat;
     height: 750px;
 }
+.logos-wrapper{
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+.logos-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.logos-header{
+    font-size: 4.0rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.logos-box img{
+    margin: 25px 15px;
+    width: auto;
+    height: 100%;
+    display: block;
+    filter: grayscale(1);
+    transition: filter 0.3s ease-in-out, margin 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+.logos-box img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
