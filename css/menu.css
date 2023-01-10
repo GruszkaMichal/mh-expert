@@ -66,3 +66,17 @@ nav .navbar-light .navbar-toggler{
     position: relative;
     border: none;
 }
+@media(max-width:767px){
+    .TopBarBlack{
+        display: none;
+    }
+    .navbar-container{
+        margin-top: 0px;
+    }
+    .MainBanerWrapper{
+        height: 550px;
+    }
+    .navbar-brand img{
+        height: 60px;
+    }
+}
