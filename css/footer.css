@@ -6,7 +6,7 @@ footer {
     border-top: 7px solid #A00020;
 }
 footer a{
-    color:#FFF;
+    color:#e7e7e7;
     text-decoration:none;
     transition: all 0.2s ease-in-out;
     font-size: 2rem;
@@ -15,6 +15,7 @@ footer a{
 }
 footer p{
     font-size: 2rem;
+    color: #e7e7e7;
 }
 .footer-coontainer .row{
     justify-content: center;
