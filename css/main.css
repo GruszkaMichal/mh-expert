@@ -1,4 +1,4 @@
-
+/* main baner */
 .MainBanerContentPos{
     position: absolute;
     bottom: 80px;
@@ -28,6 +28,18 @@
     font-size: 3rem;
     line-height: 43px;
 }
+@media(max-width:767px){
+    .MainBanerContent h1{
+        font-size: 2.3rem;
+        line-height: 35px;
+    }
+    .MainBanerContent h2{
+        font-size: 2rem;
+        line-height: 35px;
+    }
+}
+
+
 .logos-wrapper{
     padding-top: 70px;
     padding-bottom: 110px;

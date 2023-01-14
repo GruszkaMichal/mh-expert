@@ -21,7 +21,7 @@ footer p{
     justify-content: center;
 }
 .footer-coontainer{
-    max-width: 950px;
+    max-width: 950px !important;
     margin: auto;
 }
 footer a:hover{
