@@ -6,12 +6,28 @@
     margin-top: 55px;
     box-shadow: 0px 4px 4px rgba(150, 150, 150, 0.25);
 }
+nav{
+    z-index: 15;
+    position: inherit;
+}
 nav .navbar-light .navbar-nav .nav-link{
     color: #000;
     font-weight: 500;
     font-size: 2.3rem;
     padding: 20px;
     transition: all 0.3s ease-in-out;
+}
+nav a.dropdown-item{
+    font-size: 1.5rem;
+}
+nav .navbar-expand-lg .navbar-nav .dropdown-menu{
+    padding: 10px 0;
+    border: #fff;
+    width: 100%;
+    top: calc(100% + 18px);
+}
+nav .navbar-expand-lg .navbar-nav .dropdown-menu li a{
+    padding: 5px 25px;
 }
 nav .navbar-light .navbar-nav .nav-link:hover{
     color: var(--red-color);

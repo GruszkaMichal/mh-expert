@@ -3,6 +3,7 @@
     position: absolute;
     bottom: 80px;
     width: 100%;
+    z-index: 10;
 }
 .MainBanerWrapper{
     background-image: url(../img/webp/baner-index.webp);
@@ -39,6 +40,112 @@
     }
 }
 
+/* categories tiles */
+.categories-item{
+    min-height: 284px;
+    padding: 10px;
+}
+.categories-item a{
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.13);
+}
+.categories-item.one a{
+    background-image: url(../img/webp/serwis-wozkow.webp);
+}
+.categories-item.two a{
+    background-image: url(../img/webp/czesci.webp);
+}
+.categories-item.three a{
+    background-image: url(../img/webp/opony.webp);
+}
+.categories-text{
+    background: rgba(160, 0, 32, 0.73);
+    padding: 20px;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+.categories-item a:hover .categories-text{
+    left: 0px;
+}
+.categories-body{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.categories-item a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.categories-text strong{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.categories-text hr{
+    opacity: 1;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.categories-text{
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 25px;
+}
+
+/* tx-img */
+.tx-img-wrapper{
+    position: relative;
+}
+.tx-img-box{
+    overflow: hidden;
+}
+.tx-content-box{
+    background-color:#EFEFEF;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 703px;
+    padding: 50px;
+    padding-right: 130px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+.tx-img-wrapper b{
+    color: var(--red-color);
+}
+.tx-img-wrapper h4{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.tx-img-wrapper strong{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--red-color);
+    display: block;
+    margin-bottom: 35px;
+}
+.img-wrapper{
+    background-image: url(../img/webp/index-baner.webp);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    position: absolute;
+    width: calc(100vw / 2 + 40px);
+    top: -50px;
+    left: 642px;
+    box-shadow: -4px 4px 20px 10px rgba(0, 0, 0, 0.15);
+}
 
 .logos-wrapper{
     padding-top: 70px;
