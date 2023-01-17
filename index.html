@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-tofit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MH-EXPERT</title>
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -219,6 +220,41 @@
             </div>
         </div>
     </main>
+    <section class="bg-grey c-opinions-wrapper">
+        <div class="container">
+            <header>
+                    <strong>Ci klienci już nas sprawdzili.</strong>
+                    <span>Teraz, czekamy na ciebie.</span>
+            </header>
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="c-opinions-item">
+                                <strong>Tymon Michalski</strong>
+                                <p>Serwis pierwsza klasa, wózek sprawny i nie zanosi się na jakąś awarię w najbliższym czasie. Dziękuję.</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                        <li class="splide__slide">Slide 04</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="google-rev">
+                <div class="google-rev-box">
+                    <span>4.6</span>
+                    <img src="img/svg/icon-star.svg" width="28" height="28" loading="lazy" alt="czerwona gwiazdka">
+                    <img src="img/svg/icon-star.svg" width="28" height="28" loading="lazy" alt="czerwona gwiazdka">
+                    <img src="img/svg/icon-star.svg" width="28" height="28" loading="lazy" alt="czerwona gwiazdka">
+                    <img src="img/svg/icon-star.svg" width="28" height="28" loading="lazy" alt="czerwona gwiazdka">
+                    <img src="img/svg/icon-half-star.svg" width="28" height="28" loading="lazy" alt="czerwona gwiazdka">
+
+                    <a href="#" title="Przekierowanie do wizytówki google">Google reviews</a> 
+                </div>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="logos-wrapper">
             <header>
@@ -309,8 +345,18 @@
         </div>
     </footer>
 </body>
+    <script src="js/splide.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+        var splide = new Splide( '.splide', {
+            perPage: 3,
+            rewind : true,
+        } );
+        splide.mount();
+        } );
+    </script>
 </html>

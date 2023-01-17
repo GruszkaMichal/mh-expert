@@ -15,6 +15,9 @@ a{
 body a:hover{
     color: var(--red-color);
 }
+.bg-grey{
+    background-color: #EBEBEB;
+}
 
 /* link icon */
 .IcLocation, 

@@ -41,6 +41,9 @@
 }
 
 /* categories tiles */
+.categories-wrapper{
+    margin-bottom: 150px;
+}
 .categories-item{
     min-height: 284px;
     padding: 10px;
@@ -97,6 +100,71 @@
     font-size: 1.7rem;
     line-height: 25px;
 }
+
+/* customer opinions */
+
+.c-opinions-wrapper{
+    padding: 30px 0;
+}
+.c-opinions-wrapper header{
+    margin-bottom: 50px;
+}
+.c-opinions-wrapper header strong{
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 44px;
+    text-align: center;
+    display: block;
+}
+.c-opinions-wrapper header span{
+    font-weight: 300;
+    font-size: 3.2rem;
+    line-height: 39px;
+    text-align: center;
+    color: var(--red-color);
+    display: block;
+
+}
+.google-rev-box{
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+.google-rev-box span, 
+.google-rev-box a{
+    padding: 5px 10px 0 10px;
+}
+.google-rev-box a{
+    color: #000;
+    text-decoration: none;
+}
+.c-opinions-item{
+    background: radial-gradient(61.43% 130.09% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 15px;
+    padding: 70px 40px 30px 70px;
+    margin: 0 25px;
+}
+.splide__track{
+    width: calc(100% - 40px);
+    margin: auto;
+}
+.c-opinions-item p{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 22px;
+    color: #4B4B4B;
+}
+.c-opinions-item strong{
+    font-weight: 400;
+    font-size: 2.3rem;
+    line-height: 28px;
+    color: #393939;
+    margin-bottom: 18px;
+    display: block;
+}
+
 
 /* tx-img */
 .tx-img-wrapper{
