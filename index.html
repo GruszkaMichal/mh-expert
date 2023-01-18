@@ -37,7 +37,7 @@
         
                         <div class="container-xl mr-auto">
         
-                            <div class="navbar-brand d-inline-block my-3 "><img src="img/webp/mh-expert-logo.webp"  class="img-fluid" width=""></div>
+                            <div class="navbar-brand d-inline-block my-lg-3 "><img src="img/webp/mh-expert-logo.webp"  class="img-fluid" width=""></div>
         
         
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -221,7 +221,7 @@
         </div>
     </main>
     <section class="bg-grey c-opinions-wrapper">
-        <div class="container">
+        <div class="container-lg">
             <header>
                     <strong>Ci klienci już nas sprawdzili.</strong>
                     <span>Teraz, czekamy na ciebie.</span>
@@ -232,12 +232,27 @@
                         <li class="splide__slide">
                             <div class="c-opinions-item">
                                 <strong>Tymon Michalski</strong>
-                                <p>Serwis pierwsza klasa, wózek sprawny i nie zanosi się na jakąś awarię w najbliższym czasie. Dziękuję.</p>
+                                <p>Serwis pierwsza klasa, wózek sprawny i&nbsp;nie zanosi się na jakąś awarię w&nbsp;najbliższym czasie. Dziękuję.</p>
                             </div>
                         </li>
-                        <li class="splide__slide">Slide 02</li>
-                        <li class="splide__slide">Slide 03</li>
-                        <li class="splide__slide">Slide 04</li>
+                        <li class="splide__slide">
+                            <div class="c-opinions-item">
+                                <strong>Dominik Gruszka</strong>
+                                <p>Naprawa szybka i&nbsp;sprawna. Mam nadzieje, że szybko nie będę musiał dzwonić :)</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="c-opinions-item">
+                                <strong>Weronika Gozdzik</strong>
+                                <p>Naprawa szybka i&nbsp;sprawna. Mam nadzieje, że szybko nie będę musiał dzwonić :)</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="c-opinions-item">
+                                <strong>Jarosław Sosna</strong>
+                                <p>Serwis pierwsza klasa, wózek sprawny i&nbsp;nie zanosi się na jakąś awarię w&nbsp;najbliższym czasie. Dziękuję.</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -355,6 +370,14 @@
         var splide = new Splide( '.splide', {
             perPage: 3,
             rewind : true,
+            breakpoints: {
+            991: {
+            perPage: 2,
+            },
+            669: {
+            perPage: 1,
+            },
+        },
         } );
         splide.mount();
         } );

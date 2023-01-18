@@ -131,6 +131,7 @@
     justify-content: flex-end;
     align-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .google-rev-box span, 
 .google-rev-box a{
@@ -143,8 +144,9 @@
 .c-opinions-item{
     background: radial-gradient(61.43% 130.09% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 15px;
-    padding: 70px 40px 30px 70px;
+    padding: 30px 40px 30px 70px;
     margin: 0 25px;
+    min-height: 220px;
 }
 .splide__track{
     width: calc(100% - 40px);
@@ -163,8 +165,43 @@
     color: #393939;
     margin-bottom: 18px;
     display: block;
+    position: relative;
 }
-
+.c-opinions-item strong::before{
+    content:"";
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    background-image: url(../img/svg/icon-person.svg);
+    left: -46px;
+    top: -3px;
+}
+.splide__pagination{
+    bottom: -2.5em;
+}
+.splide__pagination__page.is-active{
+    background: linear-gradient(90deg, #5797FF 0%, #D17FF7 100%);
+}
+.splide__pagination__page{
+    background: #5c96fe;
+}
+@media(max-width:1199px){
+    .splide__track{
+        width: 100%;
+    }
+    .c-opinions-item{
+        margin: 0 12px;
+        padding: 30px 25px 30px 60px;
+    }
+    .c-opinions-item p{
+        font-size: 1.7rem;
+    }
+    .c-opinions-item strong{
+        margin-bottom: 11px;
+    }
+    
+}
 
 /* tx-img */
 .tx-img-wrapper{
@@ -274,7 +311,7 @@
     margin-top: 10px ;
     margin-bottom: 5px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 2.6rem;
     background: linear-gradient(90deg, #0F3675 0%, rgba(15, 54, 117, 0.73) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -286,6 +323,62 @@
 }
 .ideas p{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 2.0rem;
     line-height: 29px;
+}
+@media(max-width:991px){
+    .MainBanerContentPos{
+        bottom: 15px;
+    }
+    .MainBanerWrapper{
+        height:570px;
+    }
+    .MainBanerContent{
+        background-color: rgb(11 11 11 / 69%);
+        max-width: 491px;
+        border-bottom: solid 9px rgba(160,0,32,0.8);
+    }
+    .MainBanerContent h1{  
+        font-size: 2.6rem;
+        line-height: 30px;
+    }
+    .MainBanerContent h2{ 
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    .underBanerText{
+        padding-top: 50px;
+    }
+    .underBanerText h2{
+        font-size: 2.8rem;
+    }
+    .underBanerText p{
+        font-size: 2rem;
+    }
+    .ideas h3{
+        font-size: 2rem;
+    }
+    .ideas p{
+        font-size: 1.6rem;
+    }
+    .ideas-item img{
+        width: 75px;
+        height: 75px;
+    }
+    .tx-content-box{
+        margin-top: 50px;
+    }
+    .tx-content-box{
+        padding: 55px;
+    }
+    .tx-img-wrapper h4{
+        font-size: 2.7rem;
+    }
+    .tx-img-wrapper strong{
+        font-size: 2.3rem;
+    }
+    .tx-content-box p,
+    .list-style li{
+        font-size: 1.8rem;
+    }
 }
