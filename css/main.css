@@ -213,7 +213,7 @@
 .tx-content-box{
     background-color:#EFEFEF;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 35px;
     max-width: 703px;
     padding: 50px;
@@ -226,14 +226,14 @@
 }
 .tx-img-wrapper h4{
     font-weight: 500;
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 35px;
     text-align: center;
     margin-bottom: 0;
 }
 .tx-img-wrapper strong{
     font-weight: 400;
-    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 40px;
     text-align: center;
     color: var(--red-color);
@@ -380,5 +380,9 @@
     .tx-content-box p,
     .list-style li{
         font-size: 1.8rem;
+    }
+    .logos-header{
+        font-size: 3rem;
+        padding-bottom: 25px;
     }
 }
