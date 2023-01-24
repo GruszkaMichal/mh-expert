@@ -203,104 +203,6 @@
     
 }
 
-/* tx-img */
-.tx-img-wrapper{
-    position: relative;
-}
-.tx-img-box{
-    overflow: hidden;
-}
-.tx-content-box{
-    background-color:#EFEFEF;
-    font-weight: 300;
-    font-size: 2.4rem;
-    line-height: 35px;
-    max-width: 703px;
-    padding: 50px;
-    padding-right: 130px;
-    margin-top: 150px;
-    margin-bottom: 40px;
-}
-.tx-img-wrapper b{
-    color: var(--red-color);
-}
-.tx-img-wrapper h4{
-    font-weight: 500;
-    font-size: 3.2rem;
-    line-height: 35px;
-    text-align: center;
-    margin-bottom: 0;
-}
-.tx-img-wrapper strong{
-    font-weight: 400;
-    font-size: 2.8rem;
-    line-height: 40px;
-    text-align: center;
-    color: var(--red-color);
-    display: block;
-    margin-bottom: 35px;
-}
-.img-wrapper{
-    background-image: url(../img/webp/index-baner.webp);
-    background-size: cover;
-    background-position: center;
-    height: 450px;
-    position: absolute;
-    width: calc(100vw / 2 + 40px);
-    top: -50px;
-    left: 642px;
-    box-shadow: -4px 4px 20px 10px rgba(0, 0, 0, 0.15);
-}
-
-.logos-wrapper{
-    padding-top: 70px;
-    padding-bottom: 110px;
-}
-.logos-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-}
-.logos-header{
-    font-size: 4.0rem;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.logos-box img{
-    margin: 25px 15px;
-    width: auto;
-    height: 100%;
-    display: block;
-    filter: grayscale(1);
-    transition: filter 0.3s ease-in-out, margin 0.3s ease-in-out, padding 0.3s ease-in-out;
-}
-.logos-box img:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-    margin-top: 0px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-.underBanerText{
-    padding-top: 70px;
-    padding-bottom: 50px;
-    text-align: center;
-    background: linear-gradient(0deg, #EFEFEF 0%, rgba(239, 239, 239, 0) 100%);
-}
-.underBanerText h2{
-    font-size: 3.2rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-.underBanerText h2 b{
-    color: #D93029;
-}
-.underBanerText p{
-    font-weight: 300;
-    font-size: 2.4rem;
-    line-height: 35px;
-}
-
 /* ideas icons */
 .ideas{
     text-align: center;
@@ -366,7 +268,7 @@
         height: 75px;
     }
     .tx-content-box{
-        margin-top: 50px;
+        margin-top: 150px;
     }
     .tx-content-box{
         padding: 55px;
@@ -381,8 +283,13 @@
     .list-style li{
         font-size: 1.8rem;
     }
-    .logos-header{
-        font-size: 3rem;
-        padding-bottom: 25px;
+    .tx-img-wrapper{
+        position: inherit;
+    }
+    .img-wrapper{
+        width: 100vw;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
     }
 }
