@@ -22,6 +22,71 @@
     line-height: 35px;
     text-align: center;
 }
+.m-btn{
+    display: block;
+    width: max-content;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 3.3rem;
+    min-width: 200px;
+    transition: all 0.3s ease-in-out;
+    margin: 30px;
+    text-align: center;
+}
+.m-btn.red{
+    background-color: #DC2B4F;
+    color: #fff;
+}
+.m-btn.red:hover{
+    background-color: #C11135;
+    box-shadow: 0px 0px 10px 2px rgba(46, 46, 46, 0.484);
+}
+
+/* banner text */
+
+.baner-text-wrapper{
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.baner-text-wrapper::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: block;
+    background-color: rgba(0,0,0,0.36);
+}
+.baner-text-wrapper.contact{
+    background-image: url(../img/webp/bt-kontakt.webp);
+}
+.banner-text-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 5;
+    max-width: 780px;
+    margin: auto;
+}
+.banner-text-content p{
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+.bt-buttons-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
 
 /* --- tx-img-box contact --- */
 .tx-img-box.contact .tx-content-box{
@@ -134,5 +199,46 @@ nav .breadcrumb-item+.breadcrumb-item::before{
 @media(max-width: 1199px) {
     .map-wrapper iframe{
         width: 620px;
+    }
+}
+@media (max-width: 991px){
+    .MainPageWrapper {
+        height: 570px;
+    }
+    .tx-img-box.contact .map-wrapper{
+        position: inherit;
+        width: 100%;
+        top: 0;
+        padding-bottom: 60px;
+    }
+    .tx-img-box.contact .map-wrapper iframe{
+        max-width: 100%;
+        width: 100%;
+    }
+    .tx-img-box.contact .tx-content-box{
+        margin-bottom: 25px;
+    }
+    .banner-text-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .m-btn{
+        margin: 15px;
+        padding: 15px 15px;
+        font-size: 1.9rem;
+    }
+    .banner-text-content p{
+        font-size: 2rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media(max-width: 767px){
+    .MainBanerContentPos nav{
+        width: 100%;
+        min-width: 100%;
+    }
+    .MainPageWrapper{
+        height: 480px;
     }
 }
