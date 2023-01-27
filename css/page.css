@@ -4,6 +4,10 @@
     height: 750px;
     background-size: cover;
     position: relative;
+    background-position: center center;
+}
+.MainPageWrapper.battery{
+    background-image:url(../img/webp/baner-index.webp);
 }
 .underBaner{
     margin-top: 45px;
@@ -64,8 +68,8 @@
     background-image: url(../img/webp/bt-kontakt.webp);
 }
 .banner-text-content{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     position: relative;
     z-index: 5;
     max-width: 780px;
@@ -219,18 +223,21 @@ nav .breadcrumb-item+.breadcrumb-item::before{
         margin-bottom: 25px;
     }
     .banner-text-content{
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
     .m-btn{
         margin: 15px;
         padding: 15px 15px;
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
     .banner-text-content p{
         font-size: 2rem;
         padding-left: 15px;
         padding-right: 15px;
+    }
+    .tx-img-box.contact .tx-content-box{
+        padding-right: 50px;
     }
 }
 @media(max-width: 767px){
@@ -240,5 +247,22 @@ nav .breadcrumb-item+.breadcrumb-item::before{
     }
     .MainPageWrapper{
         height: 480px;
+    }
+}
+@media(min-width: 992px){
+    .baner-text-wrapper.contact{
+        margin-top: -90px;
+        z-index: -1;
+    }
+    .tx-img-box.contact .tx-content-box{
+        padding-bottom: 120px;
+    }
+}
+@media(max-width:576px){
+    .tx-img-box.contact .tx-content-box{
+        padding: 50px 25px 50px 25px;
+    }
+    .MainPageWrapper{
+        height: 380px;
     }
 }

@@ -48,6 +48,7 @@ footer .content-wrapper{
 .footers-links a{
     display:block;
     margin-bottom: 20px;
+    width: max-content;
 }
 .border-around{
     position: relative;

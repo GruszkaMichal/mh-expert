@@ -105,3 +105,13 @@
         position: relative;
     }
 }
+@media(max-width: 576px){
+    .logos-box{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .logos-box img{
+        max-width: 250px;
+    }
+}
