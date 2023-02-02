@@ -48,13 +48,26 @@ body a:hover{
     background-image: url(../img/svg/icon-phone.svg);
     left: -26px;
 }
-.list-style{
+.list-style,
+.page-content ul{
     list-style: none;
-    padding-left: 45px;
+    padding-left: 30px;
 }
-.list-style li{
+
+.list-style li,
+.page-content li{
     position: relative;
     margin-bottom: 5px;
+}
+.page-content li::before{
+    content:" ";
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    background-image: url(../img/svg/icon-arrow-red.svg);
+    left: -30px;
+    top: 3px;
 }
 .list-style li:before{
     content:" ";
@@ -65,4 +78,10 @@ body a:hover{
     background-image: url(../img/svg/icon-tool.svg);
     left: -33px;
     top: 9px;
+}
+.page-content li{
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 29px;
+    margin-bottom: 15px;
 }
