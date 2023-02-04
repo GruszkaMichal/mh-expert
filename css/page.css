@@ -97,6 +97,24 @@ main{
 }
 
 
+/* contact-box */
+
+.contact-box{
+    margin-top: 150px;
+}
+.contact-box .header{
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact-box-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Page content */
 .product-item{
     margin-top: 50px;
@@ -123,9 +141,10 @@ main{
 .product-wrap h3{
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 3.2rem;
     padding: var(--product-padding);
     margin-bottom: 0;
+    line-height: 18px;
 }
 .product-wrap h3 strong{
     font-weight: 500;
@@ -157,7 +176,7 @@ main{
 }
 .product-content p{
     font-weight: 300;
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 35px;
     max-width: 620px;
     margin-bottom: 20px;
@@ -168,6 +187,48 @@ main{
     justify-content: space-around;
 }
 
+/* icon-quality-wrap */
+
+.icon-quality-wrap{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.icon-quality-wrap .header{
+    font-weight: 500;
+    font-size: 4.0rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon-qu-item{
+    max-width: 294px;
+}
+.icon-qu-item:nth-child(1){
+    padding-top: 30px;
+}
+.icon-qu-item:nth-child(3){
+    padding-top: 30px;
+}
+.icon-qu-item img{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+}
+.icon-qu-item strong{
+    color: #E43149;
+}
+.icon-qu-item p{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 35px;
+    text-align: center;
+}
 
 /* --- tx-img-box contact --- */
 .tx-img-wrapper{
@@ -287,8 +348,8 @@ nav .breadcrumb-item+.breadcrumb-item::before{
     }
 }
 @media (max-width: 991px){
-    .product-item.t-left{
-        
+    .icon-container .icon-qu-item{
+        padding-top: 0;
     }
     .t-right .product-content::before {
         left: calc((-100vw + 100%) / 2 );
